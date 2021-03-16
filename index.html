@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <div class="container">
+     
+        <input type="text" class="result">
+
+        <div class="first-row">
+          <input type="button" name="" value="MC" class="button">
+          <input type="button" name="" value="M+" class="button">
+          <input type="button" name="" value="/" class="button" onclick="dispBox('/')">
+          <input type="button" name="" value="*" class="button" onclick="dispBox('*')">
+        </div>
+
+        <div class="second-row">
+          <input type="button" name="" value="7" class="button" onclick="dispBox('7')">
+          <input type="button" name="" value="8" class="button" onclick="dispBox('8')">
+          <input type="button" name="" value="9" class="button" onclick="dispBox('9')">
+          <input type="button" name="" value="-" class="button" onclick="dispBox('-')">
+        </div>
+
+        <div class="third-row">
+          <input type="button" name="" value="4" class="button" onclick="dispBox('4')">
+          <input type="button" name="" value="5" class="button" onclick="dispBox('5')">
+          <input type="button" name="" value="6" class="button" onclick="dispBox('6')">
+          <input type="button" name="" value="+" class="button" onclick="dispBox('+')">
+        </div>
+
+        <div class="fourth-row">
+          <input type="button" name="" value="1" class="button" onclick="dispBox('1')">
+          <input type="button" name="" value="2" class="button" onclick="dispBox('2')">
+          <input type="button" name="" value="3" class="button" onclick="dispBox('3')">
+          <input type="button" name="" value="=" class="button" onclick="print()">
+        </div>
+
+        <div class="fifth-row"> 
+            <input type="button" name="" value="0" class="button" onclick="dispBox('0')">
+            <input type="button" name="" value="." class=" button" onclick="dispBox('.')">
+            <input type="button" name="" value="Delete" class="button " onclick="del()" style=" background-color: #F50258; color: #fff;">
+            <input type="button" name="" value="Clear" class="button " onclick="clear()" style=" background-color: green; color: #fff;">
+        </div>
+
+    </div> 
+</body>
+</html>
